@@ -3,32 +3,23 @@
 public class HolaMundo {
 
     public static void main(String args[]) {
-        char miCaracter = 'ñ';
-        System.out.println("miCaracter = " + miCaracter);
+        boolean varBoolean = false;
+        System.out.println("varBoolean = " + varBoolean);
 
-        char varChar = '\u0021';
-        System.out.println("varChar = " + varChar);
+        if (varBoolean) {
+            System.out.println("La bandera es verdadera");
+        } else {
+            System.out.println("La bandera es falsa");
+        }
 
-        char varCharDecimal = 33;
-        System.out.println("varCharDecimal = " + varCharDecimal);
+        var edad = 10;
 
-        char vaCharSImbolo = '!';
-        System.out.println("vaCharSImbolo = " + vaCharSImbolo);
-
-        var varChar1 = '\u0021';
-        System.out.println("varChar1 = " + varChar1);
-
-        var varCharDecimal2 = (char) 33;
-        System.out.println("varCharDecimal2 = " + varCharDecimal2);
-
-        var vaCharSImbolo2 = '!';
-        System.out.println("vaCharSImbolo2 = " + vaCharSImbolo2);
         
-        int variableEnteraSimbolo = '!';
-        System.out.println("variableEnteraSimbolo = " + variableEnteraSimbolo);
+        if(edad >= 18)
+            System.out.println("Eres mayor de edad");
+        else
+            System.out.println("Eres menor de edad");
         
-        int letra = 'A';
-        System.out.println("letra = " + letra);
 
     }
 }
