@@ -16,8 +16,17 @@ public class HolaMundo {
 
         //Pedit un valor
         var consola = new Scanner(System.in);
-        System.out.println("Proporciona tu edad:");
-        edad = Integer.parseInt(consola.nextLine());
-        System.out.println("edad = " + edad);
+//        System.out.println("Proporciona tu edad:");
+//        edad = Integer.parseInt(consola.nextLine());
+//        System.out.println("edad = " + edad);
+        var edadTexto = String.valueOf(10);
+        System.out.println("edadTexto = " + edadTexto);
+
+        var character = "hola".charAt(2);
+        System.out.println("character = " + character);
+
+        System.out.println("Proporciona un caracter");
+        character = consola.nextLine().charAt(0);
+        System.out.println("character = " + character);
     }
 }
