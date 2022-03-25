@@ -1,32 +1,29 @@
 
-import java.util.Scanner;
-
-//Mi clase en Java
 public class HolaMundo {
 
     public static void main(String args[]) {
-        //Convertir tipo String a un tipo int
-        var edad = Integer.parseInt("20");
+        int a = 3, b = 2;
+        var resultado = a + b;
+        System.out.println("resultado suma = " + resultado);
+        
+        resultado = a - b;
+        
+        System.out.println("resultado  resta = " + resultado);
+        
+        resultado = a * b;
+        System.out.println("resultado multiplicacion = " + resultado);
+        
+        var resultado2 = 3D/ b;
+        System.out.println("resultado division = " + resultado2);
+        
+        resultado = a % b;
+        System.out.println("resultado = " + resultado);
+        
+        
+        if(a % 2 ==0)
+            System.out.println("Es número par");
+        else
+            System.out.println("Es número impar");
 
-        //var edad = "20";
-        System.out.println("edad = " + (edad + 1));
-
-        var valorPI = Double.parseDouble("3.1416");
-        System.out.println("valorPI = " + valorPI);
-
-        //Pedit un valor
-        var consola = new Scanner(System.in);
-//        System.out.println("Proporciona tu edad:");
-//        edad = Integer.parseInt(consola.nextLine());
-//        System.out.println("edad = " + edad);
-        var edadTexto = String.valueOf(10);
-        System.out.println("edadTexto = " + edadTexto);
-
-        var character = "hola".charAt(2);
-        System.out.println("character = " + character);
-
-        System.out.println("Proporciona un caracter");
-        character = consola.nextLine().charAt(0);
-        System.out.println("character = " + character);
     }
 }
