@@ -3,12 +3,20 @@ public class HolaMundo {
 
     public static void main(String args[]) {
 
-        var resultado = (1 > 2) ? "verdadero" : "falso";
+        var x = 5;
+        var y = 10;
 
+        var z = ++x + y--;
+
+        System.out.println("x = " + x);
+        System.out.println("y = " + y);
+        System.out.println("z = " + z);
+
+        var resultado = 4 + 5 * 6 / 3;
         System.out.println("resultado = " + resultado);
-
-        var numero = 8;
-        resultado = (numero % 2 == 0) ? "numero par" : "numero impar";
+        
+        resultado = (4 + 5) * 6 / 3;
+        System.out.println("resultado = " + resultado);
 
     }
 }
