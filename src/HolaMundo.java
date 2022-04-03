@@ -5,18 +5,36 @@ public class HolaMundo {
 
     public static void main(String args[]) {
 
-        var numero = 2;
-        var numeroTexto = "Valor desconocido";
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Ingrese el mes");
 
-        numeroTexto = switch (numero) {
-            case 1 -> "Numero uno";
-            case 2 -> "Numero dos";
-            case 3 -> "Numero tres";
-            case 4 -> "Numero cuatro";
-            default -> "Caso no encontrado";
-        };
+        var mes = Integer.parseInt(teclado.nextLine());
+        var estacion = "Estación desconocida";
 
-        System.out.println(" numero texto = " + numeroTexto);
+        switch (mes) {
+            case 1:
+            case 2:
+            case 12:
+                estacion = "Invierno";
+                break;
+            case 3:
+            case 4:
+            case 5:
+                estacion = "Primavera";
+                break;
+            case 6:
+            case 7:
+            case 8:
+                estacion = "Verano";
+                break;
+            case 9:
+            case 10:
+            case 11:
+                estacion = "Otonio";
+                break;
+        }
+
+        System.out.println("estacion = " + estacion);
 
     }
 }
