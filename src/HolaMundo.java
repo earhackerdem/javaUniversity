@@ -1,30 +1,32 @@
 
 import java.util.Scanner;
 
-
 public class HolaMundo {
 
     public static void main(String args[]) {
-        
-        Scanner teclado = new Scanner(System.in);
-        
-        System.out.println("Ingrese el mes");
-        
-         var  mes = Integer.parseInt(teclado.nextLine());
 
-        var estacion = "Estación desconocida";
+        var numero = 2;
+        var numeroTexto = "Valor desconocido";
 
-        if (mes == 1 || mes == 2 || mes == 12) {
-            estacion = "Invierno";
-        } else if (mes == 3 || mes == 4 || mes == 5) {
-            estacion = "Primavera";
-        } else if (mes == 6 || mes == 7 || mes == 8) {
-            estacion = "Verano";
-        } else if (mes == 9 || mes == 10 || mes == 11) {
-            estacion = "Otonio";
+        switch (numero) {
+            case 1:
+                numeroTexto = "Numero uno";
+                break;
+            case 2:
+                numeroTexto = "Numero dos";
+                break;
+            case 3:
+                numeroTexto = "Numero tres";
+                break;
+            case 4:
+                numeroTexto = "Numero cuatro";
+                break;
+            default:
+                numeroTexto = "Caso no encontrado";
+                break;
         }
-        
-        System.out.println("estacion = " + estacion);
-    }
 
+        System.out.println(" numero texto = " + numeroTexto);
+
+    }
 }
